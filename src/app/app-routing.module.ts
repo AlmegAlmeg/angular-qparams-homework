@@ -7,6 +7,7 @@ import { NamesListComponent } from './pages/names-list/names-list.component';
 import { AuthGuard } from './services/auth.guard';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
