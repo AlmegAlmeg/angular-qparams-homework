@@ -1,0 +1,13 @@
+nav{
+    background-color: rgb(156, 191, 255);
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .menu a{
+    margin-right: 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}

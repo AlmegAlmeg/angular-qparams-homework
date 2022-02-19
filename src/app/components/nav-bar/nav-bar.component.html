@@ -1,0 +1,9 @@
+<nav>
+    <div class="menu">
+        <a *ngFor="let link of linksArr" [routerLink]="['/', link]">{{link | titlecase}}</a>
+    </div>
+    <div class="loginLogoutButtons">
+        <button *ngIf="!isLoggedInFromService" class="btn btn-success" (click)="btnLogin()" >Login</button>
+        <button *ngIf="isLoggedInFromService" class="btn btn-danger" (click)="btnLogout()" >Logout</button>
+    </div>
+</nav>
